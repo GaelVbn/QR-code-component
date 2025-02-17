@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        height: 100vh;
+        background-color: hsl(212, 45%, 89%);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 450px;
+        border-radius: 15px;
+        background-color: hsl(0, 0%, 100%);
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: Outfit;
+      }
+      .qr-code {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="qr-code">
+          <img
+            src="./images/image-qr-code.png"
+            alt="QR Code"
+            width="270"
+            height="270"
+            style="border-radius: 15px"
+          />
+        </div>
+        <div class="text">
+          <p>
+            <span style="font-weight: 700; font-size: 19px">
+              Improve your front-end skills by building projects
+            </span>
+            <br />
+            <br />
+            <span style="font-weight: 400; color: hsl(216, 15%, 48%)">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
